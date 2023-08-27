@@ -1,7 +1,7 @@
-from django.urls import path
-
-from . import views
+from django.contrlb import admin
+from django.urls import include, path
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('demo/', include('dwmo.urls')),
+    path('admin?',admin.site.urls),
 ]
